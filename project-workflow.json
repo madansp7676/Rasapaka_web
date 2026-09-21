@@ -1,0 +1,36 @@
+{
+  "project": "Shree Krishna Rasapaaka Grand, Sullia",
+  "repository": "https://github.com/madansp7676/Rasapaka_web",
+  "scope": "Use this repository only for Rasapaaka Grand. Do not save other projects here without explicit user instruction.",
+  "delivery": "Save source and corrections in Git. Generate and provide ZIP only when the user asks.",
+  "stack": "HTML, Bootstrap, CSS and JavaScript; frontend only until backend is requested.",
+  "code_requirements": [
+    "Keep business content centrally configurable rather than repeated throughout pages.",
+    "Use clean, maintainable code and check syntax, local paths and relevant behavior.",
+    "Do not label preview enquiries as real bookings."
+  ],
+  "pending_corrections": [
+    {
+      "id": "header-redesign",
+      "status": "pending",
+      "requirements": [
+        "Curved header edges with translucent blurred background inspired by https://vantara.in/en.",
+        "Enhance supplied gold logo preserving its design, then integrate it.",
+        "Place SHREE KRISHNA and RASAPAAKA GRAND below the logo.",
+        "Keep navigation aligned on desktop, tablet and mobile."
+      ],
+      "logo_source": "assets/img/logo-original.png"
+    },
+    {
+      "id": "centralize-content",
+      "status": "pending",
+      "requirements": [
+        "Centralize business details and menu content; remove repeated embedded business values."
+      ]
+    }
+  ],
+  "validation_limits": [
+    "Browser layout verification has not run; browser downloads failed.",
+    "Third-party photo commercial reuse permission is unverified; source credits are included."
+  ]
+}
