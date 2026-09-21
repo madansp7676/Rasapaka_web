@@ -11,17 +11,6 @@
   ],
   "pending_corrections": [
     {
-      "id": "header-redesign",
-      "status": "pending",
-      "requirements": [
-        "Curved header edges with translucent blurred background inspired by https://vantara.in/en.",
-        "Enhance supplied gold logo preserving its design, then integrate it.",
-        "Place SHREE KRISHNA and RASAPAAKA GRAND below the logo.",
-        "Keep navigation aligned on desktop, tablet and mobile."
-      ],
-      "logo_source": "assets/img/logo-original.png"
-    },
-    {
       "id": "centralize-content",
       "status": "pending",
       "requirements": [
@@ -32,5 +21,23 @@
   "validation_limits": [
     "Browser layout verification has not run; browser downloads failed.",
     "Third-party photo commercial reuse permission is unverified; source credits are included."
+  ],
+  "completed_corrections": [
+    {
+      "id": "header-redesign",
+      "status": "completed",
+      "requirements": [
+        "Curved header edges with translucent blurred background inspired by https://vantara.in/en.",
+        "Enhance supplied gold logo preserving its design, then integrate it.",
+        "Place SHREE KRISHNA and RASAPAAKA GRAND below the logo.",
+        "Keep navigation aligned on desktop, tablet and mobile."
+      ],
+      "logo_source": "assets/img/logo-original.png",
+      "implementation": {
+        "header": "assets/js/header.js",
+        "logo": "assets/img/logo-hd.png",
+        "styles": "assets/css/style.css"
+      }
+    }
   ]
 }

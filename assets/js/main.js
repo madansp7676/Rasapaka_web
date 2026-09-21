@@ -1,7 +1,5 @@
 'use strict';
 document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
-const navigation=document.getElementById('navigation');
-navigation.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<992)bootstrap.Collapse.getOrCreateInstance(navigation,{toggle:false}).hide()}));
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>{const selected=b===button;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected))});document.querySelectorAll('[data-category]').forEach(card=>{card.hidden=button.dataset.filter!=='All'&&card.dataset.category!==button.dataset.filter})}));
 document.querySelectorAll('[data-photo]').forEach(button=>button.addEventListener('click',()=>{const photo=document.getElementById('galleryFull');photo.src=button.dataset.photo;photo.alt=button.dataset.caption;document.getElementById('galleryTitle').textContent=button.dataset.caption;document.getElementById('galleryCaption').textContent='Photograph from the restaurant’s public listing. See photo credits for the source.';bootstrap.Modal.getOrCreateInstance(document.getElementById('galleryModal')).show()}));
 const visitDate=document.getElementById('visitDate');
